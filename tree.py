@@ -294,10 +294,10 @@ def run_decision_tree():
     test_set = csvdata("")
 
     # Load data set
-    #with open("hw4-data.csv") as f:
+    #with open("data.csv") as f:
     #    dataset.rows = [tuple(line) for line in csv.reader(f, delimiter=",")]
     #print "Number of records: %d" % len(dataset.rows)
-    f = open("hw4-data.csv")
+    f = open("data.csv")
     original_file = f.read()
     rowsplit_data = original_file.splitlines()
     dataset.rows = [rows.split(',') for rows in rowsplit_data]
